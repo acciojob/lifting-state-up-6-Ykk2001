@@ -12,6 +12,8 @@ export default function TodoList({todos,handleComplete}) {
               {
                 !todo.completed && <button onClick={()=>handleComplete(todo.id)}>Complete</button>
               }
+
+              {todo.completed && <span style={{color:"red"}}>Completed</span>}
               
             </li>)
           })

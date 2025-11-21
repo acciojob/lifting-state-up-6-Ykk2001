@@ -17,10 +17,11 @@ const App = () => {
 
   function handleComplete(id)
   {
-    setTodos(todos.map((todo)=>{
+    setTodos(prevTodos=>prevTodos.map((todo)=>{
      return  todo.id===id ? {...todo,completed:true}:todo
     }))
   }
+
 
   return (
     <div>

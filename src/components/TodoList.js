@@ -3,8 +3,8 @@ import React from "react";
 export default function TodoList({ todos, handleComplete }) {
   return (
     <>
-      <h2>Child Component</h2>
       <ul>
+        <h2>Child Component</h2>
         {todos.map((todo) => {
           return (
             <li key={todo.id}>

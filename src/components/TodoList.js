@@ -8,7 +8,7 @@ export default function TodoList({todos,handleComplete}) {
           todos.map((todo)=>{
           return ( <li key={todo.id}>
 
-              <p>{todo.text}</p>
+              {todo.text}
               {
                 !todo.completed &&  <button onClick={()=>handleComplete(todo.id)}>Complete</button>
               }
